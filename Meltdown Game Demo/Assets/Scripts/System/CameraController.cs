@@ -10,9 +10,6 @@ public class CameraController : MonoBehaviour
     [SerializeField] Transform _mainMenuPosition;
     [SerializeField] Vector3 _playerOffset;
     [SerializeField] float _smoothTime = 0.3f;
-    [SerializeField] float _mouseSensitivity = 1f;
-    [SerializeField] float _minZoom = -2f;
-    [SerializeField] float _maxZoom = 6f;
 
     Vector3 _velocity = Vector3.zero;
     Vector3 _zoomOffset = Vector3.zero;
