@@ -46,11 +46,6 @@ public class PlayerControl : MonoBehaviour
         _char.detectCollisions = false;
         _currentMotion = Vector3.zero;
         _currentAction = PlayerAction.NONE;
-    }
-
-    private void Start()
-    {
-        _currentMotion = Vector3.zero;
         MarkPlayerAsAlive(true);
     }
 
@@ -128,7 +123,6 @@ public class PlayerControl : MonoBehaviour
     void HandleDuck(bool doAction)
     {
         bool isDucking = _currentAction == PlayerAction.Duck;
-
         _currentAction = doAction ? PlayerAction.Duck : PlayerAction.NONE;
 
         if ((isDucking && doAction) || (!isDucking && !doAction))
